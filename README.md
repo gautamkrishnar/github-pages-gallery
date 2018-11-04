@@ -20,14 +20,14 @@ Follow the steps below to get your Gallery online. You will be using GitHub web 
 {
   "input": "./gallery",
   "output": "./build_output",
-  "title": "Photo Gallery", // -->> Set your gallery title here
+  "title": "Photo Gallery", // Set your gallery title here
   "sort-albums-by": "title",
   "sort-media-by": "filename",
   "download-photos": "copy",
   "cleanup": true,
   "theme": "cards",
   "theme-style": "./custom.css",
-  "footer": "Copyright Text", // --->> Set your copyright text here
+  "footer": "Copyright Text", // Set your copyright text here
   "usage-stats": false
 }
 ```
@@ -55,7 +55,8 @@ for the token:
 1. Go to the [gallery](gallery) folder of the cloned repo.
 2. Click on Create a new file button.
 3. Type AlbumName/.gitkeep in the input box
-4. Click Commit button at the bottom.
+4. Click Commit Changes button at the bottom.
+
 ![newfolder](https://media.giphy.com/media/455paOHOAWr4KWNOtg/giphy.gif)
 
 #### Adding Media
