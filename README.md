@@ -3,8 +3,8 @@ Host your photo/video gallery in GitHub using Github pages easily using Thumbsup
 
 ### Why this project?
 This project contains starter code for anyone who wants to deploy his/her photo/video galery on Github Pages, 
-**Zero Coding Needed**. Since Github pages is a free hosting service offered by Github to host static pages, since it 
-offers decent bandwidth it is a great choice for photographers to showcase their works. Travis-CI is a CI & CD
+**Zero Coding Needed**. Since Github pages is a free hosting service offered by Github to host static pages, it 
+offers a decent bandwidth. Sp it is a great choice for photographers to showcase their works. Travis-CI is a CI & CD
 platform that offers unlimited builds for open source projects. Combining the power of GitHub pages with Travis CI is
 a zero dollar solution to get your gallery online.
 
@@ -78,5 +78,16 @@ Now visit your forked repo on GitHub. Click on the settings tab. Scroll down to 
 You can even set a custom domain to your site: https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/
 
 ### Limitations
-* Github Pages terms and services.
-* Upload limit (100 Mb)
+* Github Pages [terms of service](https://help.github.com/articles/github-terms-of-service/):
+> If your bandwidth usage significantly exceeds the average bandwidth usage (as determined solely by GitHub) of other GitHub customers, we reserve the right to immediately disable your account or throttle your file hosting until you can reduce your bandwidth consumption.
+
+This is too unlikely to happen. You can easily setup [Netlify](https://www.netlify.com/) on gh-pages branch to host your site, if you need unlimited bandwidth. 
+
+* File size limit (100 MB) & Repo size limit (1 GB): Github limits the maximum usable firesize as 100MB for all files.
+This is enough for most users. It also imposes a repo size limit of 1GB. Visit https://help.github.com/articles/what-is-my-disk-quota/ for more info.
+
+
+## Tools Used
+* [Travis CI](https://travis-ci.org/) For continuous deployment.
+* [Thumbsup](https://thumbsup.github.io/) for gallery static page generation.
+* [GithHub Pages]() for hosting.
