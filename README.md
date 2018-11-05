@@ -77,7 +77,7 @@ Now visit your forked repo on GitHub. Click on the settings tab. Scroll down to 
 
 Rename the repo if you need something like `/gallery'. You can even set a custom domain to your site: https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/
 
-### Limitations
+## Limitations
 * Github Pages [terms of service](https://help.github.com/articles/github-terms-of-service/):
 > If your bandwidth usage significantly exceeds the average bandwidth usage (as determined solely by GitHub) of other GitHub customers, we reserve the right to immediately disable your account or throttle your file hosting until you can reduce your bandwidth consumption.
 
@@ -91,3 +91,6 @@ This is enough for most users. It also imposes a repo size limit of 1GB. Visit h
 * [Travis CI](https://travis-ci.org/) For continuous deployment.
 * [Thumbsup](https://thumbsup.github.io/) for gallery static page generation.
 * [GithHub Pages]() for hosting.
+
+## Contributing
+Feel free to make any changes and submit a PR.
