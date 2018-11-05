@@ -25,12 +25,17 @@ Follow the steps below to get your Gallery online. You will be using GitHub web 
   "sort-media-by": "filename",
   "download-photos": "copy",
   "cleanup": true,
-  "theme": "cards",
+  "theme": "cards", // Your theme
   "theme-style": "./custom.css",
   "footer": "Copyright Text", // Set your copyright text here
   "usage-stats": false
 }
 ```
+You can chose from any of the theme below to set the value for theme key:
+* `mosaic` - https://thumbsup.github.io/demos/themes/mosaic/
+* `cards` - https://thumbsup.github.io/demos/themes/cards/
+* `classic` - https://thumbsup.github.io/demos/themes/classic/ 
+
 You can learn more about the configuration file here: https://thumbsup.github.io/docs/3-configuration/usage/. Click on the commit changes button below the page.
 
 4. Create a new account at https://travis-ci.org. Grand all access permission to Github account while signing up.
