@@ -12,7 +12,6 @@ before_install:
 - sudo apt-get -y install ffmpeg
 - sudo apt-get -y install graphicsmagick
 - sudo apt-get -y install gifsicle
-before_script:
 - npm install -g thumbsup
 script:
 - thumbsup --config config.json
