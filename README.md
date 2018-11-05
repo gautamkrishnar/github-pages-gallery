@@ -34,7 +34,7 @@ Follow the steps below to get your Gallery online. You will be using GitHub web 
 You can learn more about the configuration file here: https://thumbsup.github.io/docs/3-configuration/usage/. Click on the commit changes button below the page.
 
 4. Create a new account at https://travis-ci.org. Grand all access permission to Github account while signing up.
-5. After signing in enable the repo bby troggling the switch:
+5. After signing in enable the repo by toggling the switch:
 ![travis](https://user-images.githubusercontent.com/8397274/47970260-33ec0200-e0a9-11e8-99e0-c94fe41034cf.gif)
 6. Go to the project's page by clicking on the project name:
 ![project](https://user-images.githubusercontent.com/8397274/47970299-8e855e00-e0a9-11e8-9218-64cf97402776.png)
@@ -68,14 +68,14 @@ for the token:
 
 #### Find your website URL
 If you had done all the above steps then your website will be live now. Please check travis CI for the sttaus of the 
-deployment. You cann see a build passing badge like the one below:
+deployment. You can see a build passing badge like the one below:
 
 ![travis](https://user-images.githubusercontent.com/8397274/48001817-a99ab100-e12f-11e8-915a-f7a787eb6b0b.png)
 
 Now visit your forked repo on GitHub. Click on the settings tab. Scroll down to GitHub pages. Now you can see the URL of the site:
 ![url](https://user-images.githubusercontent.com/8397274/48008065-f639b880-e13e-11e8-9f8e-72d27ad7cc30.png)
 
-You can even set a custom domain to your site: https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/
+Rename the repo if you need something like `/gallery'. You can even set a custom domain to your site: https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/
 
 ### Limitations
 * Github Pages [terms of service](https://help.github.com/articles/github-terms-of-service/):
