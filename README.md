@@ -1,5 +1,5 @@
 # Github Pages Gallery
-Host your photo/video gallery in GitHub using Github pages easily using Thumbsup & Travis CI for free.
+Host your photo/video gallery in Github pages easily using Thumbsup & Travis CI for free.
 
 ### Why this project?
 This project contains starter code for anyone who wants to deploy his/her photo/video galery on Github Pages, 
@@ -12,11 +12,11 @@ a zero dollar solution to get your gallery online.
 Follow the steps below to get your Gallery online. You will be using GitHub web interface to do everything. 
 :wink: No frustrating CLIs:
 1. SignUp for a Github account and verify your email ID: https://github.com/join
-2. Cone this repository:
-![Clone](https://user-images.githubusercontent.com/8397274/47970004-a0fd9880-e0a5-11e8-8f46-966e21d39c87.gif)
+2. Fork this repository:
+![fork](https://user-images.githubusercontent.com/8397274/47970004-a0fd9880-e0a5-11e8-8f46-966e21d39c87.gif)
 3. Edit [config.json](config.json) by clicking on the edit button (forked repo):
 
-```json
+```
 {
   "input": "./gallery",
   "output": "./build_output",
@@ -31,7 +31,7 @@ Follow the steps below to get your Gallery online. You will be using GitHub web 
   "usage-stats": false
 }
 ```
-Uses of other keys will be explained later. Click on the commit changes button below the page.
+You can learn more about the configuration file here: https://thumbsup.github.io/docs/3-configuration/usage/. Click on the commit changes button below the page.
 
 4. Create a new account at https://travis-ci.org. Grand all access permission to Github account while signing up.
 5. After signing in enable the repo bby troggling the switch:
@@ -52,7 +52,7 @@ for the token:
 13. Click on the Add button. Now you are all set.
 
 #### Adding a new album to gallery
-1. Go to the gallery folder of the cloned repo.
+1. Go to the gallery folder of the forked repo.
 2. Click on Create a new file button.
 3. Type AlbumName/.gitkeep in the input box
 4. Click Commit Changes button at the bottom.
