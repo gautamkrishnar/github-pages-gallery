@@ -4,7 +4,7 @@ Host your photo/video gallery in GitHub using Github pages easily using Thumbsup
 ### Why this project?
 This project contains starter code for anyone who wants to deploy his/her photo/video galery on Github Pages, 
 **Zero Coding Needed**. Since Github pages is a free hosting service offered by Github to host static pages, since it 
-offers unlimited bandwidth it is a great choice for photographers to showcase their works. Travis-CI is a CI & CD
+offers decent bandwidth it is a great choice for photographers to showcase their works. Travis-CI is a CI & CD
 platform that offers unlimited builds for open source projects. Combining the power of GitHub pages with Travis CI is
 a zero dollar solution to get your gallery online.
 
@@ -52,14 +52,31 @@ for the token:
 13. Click on the Add button. Now you are all set.
 
 #### Adding a new album to gallery
-1. Go to the [gallery](gallery) folder of the cloned repo.
+1. Go to the gallery folder of the cloned repo.
 2. Click on Create a new file button.
 3. Type AlbumName/.gitkeep in the input box
 4. Click Commit Changes button at the bottom.
 
 ![newfolder](https://media.giphy.com/media/455paOHOAWr4KWNOtg/giphy.gif)
 
-#### Adding Media
-1. Go to [gallery](gallery) folder. Open any albums if any.
+#### Adding Medias
+1. Go to gallery folder. Open any albums if any.
 2. Click on Upload files button
 3. Select files. Once it finishes upload, click Commit Changes button.
+
+![selectmedia](https://media.giphy.com/media/2uIfenjYx5anbQOEAo/giphy.gif)
+
+#### Find your website URL
+If you had done all the above steps then your website will be live now. Please check travis CI for the sttaus of the 
+deployment. You cann see a build passing badge like the one below:
+
+![travis](https://user-images.githubusercontent.com/8397274/48001817-a99ab100-e12f-11e8-915a-f7a787eb6b0b.png)
+
+Now visit your forked repo on GitHub. Click on the settings tab. Scroll down to GitHub pages. Now you can see the URL of the site:
+![url](https://user-images.githubusercontent.com/8397274/48008065-f639b880-e13e-11e8-9f8e-72d27ad7cc30.png)
+
+You can even set a custom domain to your site: https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/
+
+### Limitations
+* Github Pages terms and services.
+* Upload limit (100 Mb)
