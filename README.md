@@ -77,7 +77,10 @@ deployment. You can see a build passing badge like the one below:
 
 ![travis](https://user-images.githubusercontent.com/8397274/48001817-a99ab100-e12f-11e8-915a-f7a787eb6b0b.png)
 
-Now visit your forked repo on GitHub. Click on the settings tab. Scroll down to GitHub pages. Now you can see the URL of the site:
+#### Select gh-pages branch as the source for Github pages
+Now visit your forked repo on GitHub. Click on the settings tab. Scroll down to GitHub pages. Make sure that you have the **gh-pages** brach selected as the **Source** for the GitHub pages. 
+
+Now you can see the URL of the site:
 ![url](https://user-images.githubusercontent.com/8397274/48008065-f639b880-e13e-11e8-9f8e-72d27ad7cc30.png)
 
 Rename the repo if you need something like `/gallery'. You can even set a custom domain to your site: https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/
