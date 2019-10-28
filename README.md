@@ -91,8 +91,7 @@ Rename the repo if you need something like `/gallery'. You can even set a custom
 
 This is too unlikely to happen. You can easily setup [Netlify](https://www.netlify.com/) on gh-pages branch to host your site, if you need unlimited bandwidth. 
 
-* File size limit (100 MB) & Repo size limit (1 GB): Github limits the maximum usable firesize as 100MB for all files.
-This is enough for most users. It also imposes a repo size limit of 1GB. Visit https://help.github.com/articles/what-is-my-disk-quota/ for more info.
+* File size limit (100 MB) & Repo size limit (75 GB) & Upload limit(25MB): Github limits the maximum usable firesize as 100MB for all files. This is enough for most users. It also imposes a repo size limit of 75GB. If you add a file to a repository via a browser, the file can be no larger than 25 MB. Visit https://help.github.com/articles/what-is-my-disk-quota/ for more info.
 
 
 ## Tools Used
