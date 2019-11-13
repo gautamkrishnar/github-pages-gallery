@@ -1,0 +1,29 @@
+language: node_js
+sudo: required
+dist: trusty
+node_js:
+- 11
+before_install:
+- sudo add-apt-repository -y ppa:rwky/graphicsmagick
+- sudo add-apt-repository -y ppa:mc3man/trusty-media
+- sudo apt-get -y update
+- sudo apt-get install -y libimage-exiftool-perl
+- sudo apt-get -y install python-software-properties
+- sudo apt-get -y install software-properties-common
+- sudo apt-get -y install ffmpeg
+- sudo apt-get -y install graphicsmagick
+- sudo apt-get -y install gifsicle
+- npm install -g thumbsup
+script:
+- thumbsup --config config.json
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local_dir: build_output
+  committer-from-gh: true
+  keep-history: true
+  github-token:  $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  on:
+    branch: master
+notifications:
+  email: false
