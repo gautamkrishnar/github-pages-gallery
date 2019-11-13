@@ -28,16 +28,16 @@ jobs:
             sudo apt-get -y install ffmpeg
             sudo apt-get -y install graphicsmagick
             sudo apt-get -y install gifsicle
-      - run:
-          name: THUMBUP BUILD
-          command: |
             sudo npm config set unsafe-perm=true
             sudo npm install -g thumbsup
+            sudo npm install -g --silent gh-pages@2.0.1
+      - run:
+          name: ThumbsUp Build
+          command: |
             thumbsup --config config.json
       - run: # git push
           name: push-github
           command: |
-            sudo npm install -g --silent gh-pages@2.0.1
             git config --global user.email "Your Email"
             git config --global user.name "Your username"
             gh-pages --dotfiles --message "[Circle CI] Updates" --dist ./build_output
