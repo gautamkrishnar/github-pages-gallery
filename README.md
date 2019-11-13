@@ -36,7 +36,9 @@ You can chose from any of the theme below to set the value for theme key:
 * `cards` - https://thumbsup.github.io/demos/themes/cards/
 * `classic` - https://thumbsup.github.io/demos/themes/classic/ 
 
-You can learn more about the configuration file here: https://thumbsup.github.io/docs/3-configuration/usage/. Click on the commit changes button below the page.
+You can learn more about the configuration file here: https://thumbsup.github.io/docs/3-configuration/usage/. Click on the commit changes button below the page.  
+
+**The instrutions for Travis CI is shown below.If you want to use Circle CI instead of Travis CI, please follow [this instruction](https://github.com/TGYZ-1909/github-pages-gallery/blob/master/circle-ci-readme.md "this instruction")**  
 
 4. Create a new account at https://travis-ci.org. Grand all access permission to Github account while signing up.
 5. After signing in enable the repo by toggling the switch:
@@ -92,6 +94,8 @@ Rename the repo if you need something like `/gallery'. You can even set a custom
 This is too unlikely to happen. You can easily setup [Netlify](https://www.netlify.com/) on gh-pages branch to host your site, if you need unlimited bandwidth. 
 
 * File size limit (100 MB) & Repo size limit (75 GB) & Upload limit(25MB): Github limits the maximum usable firesize as 100MB for all files. This is enough for most users. It also imposes a repo size limit of 75GB. If you add a file to a repository via a browser, the file can be no larger than 25 MB. Visit https://help.github.com/articles/what-is-my-disk-quota/ for more info.
+
+* Travis CI has a build limit of 50 minutes, so if your repo get too big you need to use Circle CI for continuous deployment.  
 
 
 ## Tools Used
