@@ -10,14 +10,11 @@ jobs:
           # See more in README
       - checkout
       - run:
-          name: Update NPM
+          name: Install Dependencies
           command: |
             sudo apt-get install curl
             curl -sL https://deb.nodesource.com/setup_12.x | bash -
             sudo apt-get install -y nodejs
-      - run:
-          name: Install Dependencies
-          command: |
             sudo apt-get -y install software-properties-common
             sudo add-apt-repository -y ppa:rwky/graphicsmagick
             sudo add-apt-repository -y ppa:mc3man/trusty-media
@@ -36,9 +33,10 @@ jobs:
           command: |
             thumbsup --config config.json
       - run: # git push
-          name: push-github
+          name: Gh-Page Update
           command: |
-            git config --global user.email "Your Email"
-            git config --global user.name "Your username"
+            git config --global user.email "Your Git Email"
+            git config --global user.name "Your Git Username"
+            #See more in README
             gh-pages --dotfiles --message "[Circle CI] Updates" --dist ./build_output
 
