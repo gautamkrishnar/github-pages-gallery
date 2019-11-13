@@ -9,13 +9,13 @@ jobs:
           fingerprints: 'Your fingerprint'
       - checkout
       - run:
-          name: Update npm
+          name: Update NPM
           command: |
             sudo apt-get install curl
             curl -sL https://deb.nodesource.com/setup_12.x | bash -
             sudo apt-get install -y nodejs
       - run:
-          name: Install Dependence
+          name: Install Dependencies
           command: |
             sudo apt-get -y install software-properties-common
             sudo add-apt-repository -y ppa:rwky/graphicsmagick
