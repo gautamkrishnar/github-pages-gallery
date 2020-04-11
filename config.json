@@ -1,7 +1,7 @@
 {
   "input": "./gallery",
   "output": "./build_output",
-  "title": "Photo Gallery",
+  "title": "El Sitio de Lacome: El mejor colegio del mundo",
   "sort-albums-by": "title",
   "sort-media-by": "filename",
   "download-photos": "copy",
