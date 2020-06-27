@@ -1,13 +1,13 @@
 {
   "input": "./gallery",
   "output": "./build_output",
-  "title": "Our Times  Beauty", // Set your gallery title here
+  "title": "Our Times  Beauty", 
   "sort-albums-by": "title",
   "sort-media-by": "filename",
   "download-photos": "copy",
   "cleanup": true,
   "theme": "cards", // Your theme
   "theme-style": "./custom.css",
-  "footer": "Copyright @ Digital_Wizz", // Set your copyright text here
+  "footer": "Copyright @ Digital_Wizz",
   "usage-stats": false
 }
