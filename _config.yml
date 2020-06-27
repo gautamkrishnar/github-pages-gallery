@@ -1,13 +1,13 @@
 {
   "input": "./gallery",
   "output": "./build_output",
-  "title": "x-Core Galleries", // Set your gallery title here
+  "title": "The Gallery", // Set your gallery title here
   "sort-albums-by": "title",
   "sort-media-by": "filename",
   "download-photos": "copy",
   "cleanup": true,
   "theme": "cards", // Your theme
   "theme-style": "./custom.css",
-  "footer": "Copyright Text", // Set your copyright text here
-  "usage-stats": false
+  "footer": "Copyright @ Digital_Wizz", // Set your copyright text here
+  "usage-stats": false,
 }
