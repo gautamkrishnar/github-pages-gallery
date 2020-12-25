@@ -1,22 +1,22 @@
 # Github Pages Gallery
-Host your photo/video gallery in Github pages easily using Thumbsup & Travis CI for free.
-
-**UPDATE 25-Nov-2020: Travis-ci now limits the minutes you can build to 10000 Credits. we need to migrate to GitHub actions.**
+Host your photo/video gallery in Github pages easily using Thumbsup & Github Actions for free.
 
 ### Why this project?
 This project contains starter code for anyone who wants to deploy his/her photo/video galery on Github Pages,
 **Zero Coding Needed**. Since Github pages is a free hosting service offered by Github to host static pages, it
-offers a decent bandwidth. So it is a great choice for photographers to showcase their works. Travis-CI is a CI & CD
-platform that offers unlimited builds for open source projects. Combining the power of GitHub pages with Travis CI is
+offers a decent bandwidth. So it is a great choice for photographers to showcase their works. Github Actions is a CI & CD
+platform that offers unlimited builds for open source projects. Combining the power of GitHub pages with Github Actions is
 a zero dollar solution to get your gallery online.
 
 ### How to use
 Follow the steps below to get your Gallery online. You will be using GitHub web interface to do everything.
 :wink: No frustrating CLIs:
 1. SignUp for a Github account and verify your email ID: https://github.com/join
-2. Fork this repository:
-![fork](https://user-images.githubusercontent.com/8397274/47970004-a0fd9880-e0a5-11e8-8f46-966e21d39c87.gif)
-3. Edit [config.json](config.json) by clicking on the edit button (forked repo):
+2. Click on the use this template button:
+![template](https://user-images.githubusercontent.com/8397274/103133407-40d86f00-46d0-11eb-82f2-edb4a0a30333.png)
+3. Type a Name for your new repository
+![name](httpshttps://user-images.githubusercontent.com/8397274/103133448-88f79180-46d0-11eb-87ee-8da7a7d63473.png)
+4. Edit [config.json](config.json) by clicking on the edit button in the newly created repository under your account:
 
 ```
 {
@@ -41,23 +41,13 @@ You can chose from any of the theme below to set the value for theme key:
 
 You can learn more about the configuration file here: https://thumbsup.github.io/docs/3-configuration/usage/. Click on the commit changes button below the page.
 
-4. Create a new account at https://travis-ci.org. Grand all access permission to Github account while signing up.
-5. After signing in enable the repo by toggling the switch:
-![travis](https://user-images.githubusercontent.com/8397274/47970260-33ec0200-e0a9-11e8-99e0-c94fe41034cf.gif)
-6. Go to the project's page by clicking on the project name:
-![project](https://user-images.githubusercontent.com/8397274/47970299-8e855e00-e0a9-11e8-9218-64cf97402776.png)
-7. Click on More options menu > Settings:
-![settings](https://user-images.githubusercontent.com/8397274/47970319-da380780-e0a9-11e8-837a-4a734cceba7a.png)
-8. Scroll down to "Environment Variables" section. Add a new environment variable named **GITHUB_TOKEN**:
-![token](https://user-images.githubusercontent.com/8397274/47970352-43b81600-e0aa-11e8-93bc-8590208b74a7.png)
-9. To set the value of the token, open a new tab and create a token from Github by visiting: https://github.com/settings/tokens.
-10. Click on **Generate New Token** button. Type any name you like. Make sure that you had selected all repo permissions given below
-for the token:
-![authtoken](https://user-images.githubusercontent.com/8397274/47970413-f5efdd80-e0aa-11e8-96b0-50199855b9b3.png)
-11. Scroll down and click on the Generate token button. Copy the token you see on the page:
-12. Paste the token into the environment variable's value input box in Travis CI:
-![toekenenv](https://user-images.githubusercontent.com/8397274/47970465-b1b10d00-e0ab-11e8-8873-abf122708773.png)
-13. Click on the Add button. Now you are all set.
+5. Go to actions tab of your new repository, Wait till the Initial build completes. It will show you the following check mark:
+![actions](https://user-images.githubusercontent.com/8397274/103133265-7af54100-46cf-11eb-9cef-38fa122142aa.png)
+6. Click on the settings tab. Scroll down to GitHub pages section. Make sure that you have the **gh-pages** branch selected as the **Source** for the GitHub pages. Click on save button.
+7. You are all set with your new awesome gallery! Add Albums or photos to make it live.
+
+Now you can see the URL of the site:
+![url](https://user-images.githubusercontent.com/8397274/48008065-f639b880-e13e-11e8-9f8e-72d27ad7cc30.png)
 
 #### Adding a new album to gallery
 1. Go to the gallery folder of the forked repo.
@@ -74,33 +64,24 @@ for the token:
 
 ![selectmedia](https://media.giphy.com/media/2uIfenjYx5anbQOEAo/giphy.gif)
 
-#### Find your website URL
-If you had done all the above steps then your website will be live now. Please check travis CI for the sttaus of the
-deployment. You can see a build passing badge like the one below:
-
-![travis](https://user-images.githubusercontent.com/8397274/48001817-a99ab100-e12f-11e8-915a-f7a787eb6b0b.png)
-
-#### Select gh-pages branch as the source for Github pages
-Now visit your forked repo on GitHub. Click on the settings tab. Scroll down to GitHub pages. Make sure that you have the **gh-pages** branch selected as the **Source** for the GitHub pages. **gh-pages** branch will be created after Travis-CI finishes building and it shows "#1 passed".
-
-Now you can see the URL of the site:
-![url](https://user-images.githubusercontent.com/8397274/48008065-f639b880-e13e-11e8-9f8e-72d27ad7cc30.png)
-
-Rename the repo if you need something like `/gallery'. You can even set a custom domain to your site: https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/
+#### Finding your website URL
+If you had done all the above steps then your website will be live now. Please check Github Actions tab in your repository for the sttaus of the
+deployment.  Once it is done, Go to settings tab again and scroll down to the Github Pages section to find your public gallery URL.
 
 ## Limitations
 * Github Pages [terms of service](https://help.github.com/articles/github-terms-of-service/):
 > If your bandwidth usage significantly exceeds the average bandwidth usage (as determined solely by GitHub) of other GitHub customers, we reserve the right to immediately disable your account or throttle your file hosting until you can reduce your bandwidth consumption.
 
-This is too unlikely to happen. You can easily setup [Netlify](https://www.netlify.com/) on gh-pages branch to host your site, if you need unlimited bandwidth.
-
 * File size limit (100 MB) & Repo size limit (75 GB) & Upload limit(25MB): Github limits the maximum usable filesize as 100MB for all files. This is enough for most users. It also imposes a repo size limit of 75GB. If you add a file to a repository via a browser, the file can be no larger than 25 MB. Visit https://help.github.com/articles/what-is-my-disk-quota/ for more info.
 
 
 ## Tools Used
-* [Travis CI](https://travis-ci.org/) For continuous deployment.
+* [Github Actions](https://github.com/features/actions) For continuous deployment.
 * [Thumbsup](https://thumbsup.github.io/) for gallery static page generation.
-* [GithHub Pages]() for hosting.
+* [GithHub Pages](https://pages.github.com/) for hosting.
+
+### History
+* This project was initially using Travis CI Initially, Migrated to Github Actions for better speed and reliabilty. Travis stopped providing free unlimited builds for open source projects.
 
 ## Contributing
 Feel free to make any changes and submit a PR.
