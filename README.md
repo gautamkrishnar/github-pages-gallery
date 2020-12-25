@@ -50,6 +50,10 @@ You can learn more about the configuration file here: https://thumbsup.github.io
 6. Click on the settings tab. Scroll down to GitHub pages section. Make sure that you have the **gh-pages** branch selected as the **Source** for the GitHub pages. Click on save button.
 7. You are all set with your new awesome gallery! Add Albums or photos to make it live.
 
+#### Demo Video
+[![demo](http://img.youtube.com/vi/uYh7b2V0pyA/0.jpg)](http://www.youtube.com/watch?v=uYh7b2V0pyA "Github Pages Gallery Demo")
+
+
 #### Adding a new album to gallery
 1. Go to the gallery folder of the forked repo.
 2. Click on Create a new file button.
