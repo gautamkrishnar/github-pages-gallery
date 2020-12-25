@@ -19,7 +19,7 @@ jobs:
         run: docker run -v "$(pwd):/work" thumbsupgallery/thumbsup /bin/sh -c "cd /work/ && thumbsup --config config.json"
       - name: Deploy to Github Pages 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
-          with:
+        with:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             BRANCH: gh-pages
             FOLDER: build_output
