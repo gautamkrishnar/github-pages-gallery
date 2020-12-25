@@ -50,9 +50,6 @@ You can learn more about the configuration file here: https://thumbsup.github.io
 6. Click on the settings tab. Scroll down to GitHub pages section. Make sure that you have the **gh-pages** branch selected as the **Source** for the GitHub pages. Click on save button.
 7. You are all set with your new awesome gallery! Add Albums or photos to make it live.
 
-Now you can see the URL of the site:
-![url](https://user-images.githubusercontent.com/8397274/48008065-f639b880-e13e-11e8-9f8e-72d27ad7cc30.png)
-
 #### Adding a new album to gallery
 1. Go to the gallery folder of the forked repo.
 2. Click on Create a new file button.
@@ -71,6 +68,8 @@ Now you can see the URL of the site:
 #### Finding your website URL
 If you had done all the above steps then your website will be live now. Please check Github Actions tab in your repository for the sttaus of the
 deployment.  Once it is done, Go to settings tab again and scroll down to the Github Pages section to find your public gallery URL.
+
+![url](https://user-images.githubusercontent.com/8397274/48008065-f639b880-e13e-11e8-9f8e-72d27ad7cc30.png)
 
 ## Limitations
 * Github Pages [terms of service](https://help.github.com/articles/github-terms-of-service/):
