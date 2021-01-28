@@ -9,6 +9,7 @@ on:
 jobs:
   test:
     name: Publish Gallery to Github Pages
+    if: github.repository_owner != 'Upvision'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
