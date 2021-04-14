@@ -1,0 +1,10 @@
+name: Cancel
+on:
+  workflow_run:
+    types:
+      - requested
+jobs:
+  cancel:
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo hi
