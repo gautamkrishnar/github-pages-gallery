@@ -1,0 +1,8 @@
+name: Test
+on: [push, pull_request]
+jobs:
+  if: github.repository == 'gautamkrishnar/github-pages-gallery'
+  cancel:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo hi
