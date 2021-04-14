@@ -1,8 +1,5 @@
 name: Cancel
-on:
-  workflow_run:
-    types:
-      - requested
+on: [push, pull_request]
 jobs:
   cancel:
     runs-on: ubuntu-latest
