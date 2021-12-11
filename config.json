@@ -7,7 +7,7 @@
   "download-photos": "copy",
   "cleanup": true,
   "theme": "cards",
-  "theme-style": "./custom.css",
+  "css": "./custom.css",
   "footer": "Copyright Text",
   "usage-stats": false
 }
