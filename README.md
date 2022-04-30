@@ -32,7 +32,7 @@ Follow the steps below to get your Gallery online. You will be using GitHub web 
   "download-photos": "copy",
   "cleanup": true,
   "theme": "cards", // Your theme
-  "theme-style": "./custom.css",
+  "css": "./custom.css",
   "footer": "Copyright Text", // Set your copyright text here
   "usage-stats": false
 }
