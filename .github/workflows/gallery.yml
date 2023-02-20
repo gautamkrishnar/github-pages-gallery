@@ -22,9 +22,7 @@ jobs:
       - name: Build Gallery 🔧
         run: docker run -v "$(pwd):/work" thumbsupgallery/thumbsup /bin/sh -c "cd /work/ && thumbsup --config config.json"
       - name: Deploy to Github Pages 🚀
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: actions/deploy-pages@0243b6c10d06cb8e95ed8ee471231877621202c0
         with:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            BRANCH: gh-pages
-            FOLDER: build_output
-            CLEAN: true
+          artifact_name: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
