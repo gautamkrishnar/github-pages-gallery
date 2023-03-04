@@ -13,11 +13,9 @@ permissions:
 jobs:
   test:
     name: Publish Gallery to Github Pages
-    if: github.repository != 'gautamkrishnar/github-pages-gallery'
+    if: ${{ github.repository != 'gautamkrishnar/github-pages-gallery' && github.event.head_commit.message != '' && github.event.head_commit.message != 'Initial commit' }}
     runs-on: ubuntu-latest
     steps:
-      - name: Setup GitHub Pages ⚙️
-        uses: actions/configure-pages@v3.0.4
       - name: Checkout 🛎️
         uses: actions/checkout@v3
         with:

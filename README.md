@@ -20,7 +20,10 @@ Follow the steps below to get your Gallery online. You will be using GitHub web 
 
 ![name](https://user-images.githubusercontent.com/8397274/103133448-88f79180-46d0-11eb-87ee-8da7a7d63473.png)
 
-4. Edit [config.json](config.json) by clicking on the edit button in the newly created repository under your account:
+4. Click on the settings tab. Click on the **Pages** option under the **Code and automation** section. Make sure that you have the **GitHub actions** selected as the **Source** for the GitHub pages.
+   ![Pages](https://user-images.githubusercontent.com/8397274/222885316-edd4dad3-fcdd-4c23-ad3a-dd96fa8bc426.png)
+
+5. Edit [config.json](config.json) by clicking on the edit button in the newly created repository under your account:
 
 ```
 {
@@ -45,9 +48,8 @@ You can chose from any of the theme below to set the value for theme key:
 
 You can learn more about the configuration file here: https://thumbsup.github.io/docs/3-configuration/usage/. Click on the commit changes button below the page.
 
-5. Go to actions tab of your new repository, Wait till the Initial build completes. It will show you the following check mark:
+6. Go to actions tab of your new repository, Wait till the Initial build completes. It will show you the following check mark:
 ![actions](https://user-images.githubusercontent.com/8397274/103133265-7af54100-46cf-11eb-9cef-38fa122142aa.png)
-6. Click on the settings tab. Scroll down to GitHub pages section. Make sure that you have the **gh-pages** branch selected as the **Source** for the GitHub pages. Click on save button.
 7. You are all set with your new awesome gallery! Add Albums or photos to make it live.
 
 #### Demo Video
