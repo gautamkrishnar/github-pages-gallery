@@ -37,4 +37,4 @@ jobs:
       - name: Delete artifact 🗑️
         uses: geekyeggo/delete-artifact@v2
         with:
-          name: gh-page
+          name: gh-pages
