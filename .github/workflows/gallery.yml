@@ -21,7 +21,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Build Gallery 🔧
-        run: docker run -v "$(pwd):/work" thumbsupgallery/thumbsup /bin/sh -c "cd /work/ && thumbsup --config config.json"
+        run: docker run -v "$(pwd):/work" ghcr.io/thumbsup/thumbsup /bin/sh -c "cd /work/ && thumbsup --config config.json"
       - name: Package and upload artifact 📦
         uses: actions/upload-pages-artifact@v1.0.7
         with:
