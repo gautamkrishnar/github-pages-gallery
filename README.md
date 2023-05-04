@@ -40,7 +40,7 @@ Follow the steps below to get your Gallery online. You will be using GitHub web 
   "usage-stats": false
 }
 ```
-You can chose from any of the theme below to set the value for theme key:
+You can chose from any of the themes below to set the value for theme key:
 * `mosaic` - https://thumbsup.github.io/demos/themes/mosaic/
 * `cards` - https://thumbsup.github.io/demos/themes/cards/
 * `classic` - https://thumbsup.github.io/demos/themes/classic/
