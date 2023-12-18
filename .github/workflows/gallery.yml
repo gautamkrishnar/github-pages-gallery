@@ -11,7 +11,7 @@ permissions:
   id-token: write
   pages: write
 jobs:
-  test:
+  deploy:
     name: Publish Gallery to Github Pages
     if: ${{ github.repository != 'gautamkrishnar/github-pages-gallery' && github.event.head_commit.message != '' && github.event.head_commit.message != 'Initial commit' }}
     runs-on: ubuntu-latest
@@ -23,12 +23,12 @@ jobs:
       - name: Build Gallery 🔧
         run: docker run -v "$(pwd):/work" ghcr.io/thumbsup/thumbsup /bin/sh -c "cd /work/ && thumbsup --config config.json"
       - name: Package and upload artifact 📦
-        uses: actions/upload-pages-artifact@v1.0.7
+        uses: actions/upload-pages-artifact@v2
         with:
           path: 'build_output'
           name: gh-pages
       - name: Deploy to Github Pages 🚀
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v3
         with:
           artifact_name: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
